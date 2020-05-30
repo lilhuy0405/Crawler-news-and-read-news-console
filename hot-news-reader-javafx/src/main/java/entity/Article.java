@@ -8,26 +8,26 @@ public class Article {
     private String description;
     private String content;
     private String category;
-    private java.util.Date publicDate;
+    private Date publicDate;
     private String url;
     private String source;
 
     //
-    public void printArticleDetails() {
-        
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy, HH:mm:ss");
-        System.out.println("Tiêu đề: " + this.getTitle());
-        System.out.println("-----------------------------------------------------");
-        System.out.println("Mô tả: " + this.description);
-        System.out.println("-----------------------------------------------------");
-        System.out.println("Nội dung tin: ");
-      	System.out.println(this.content);
-        System.out.println("-----------------------------------------------------");
-        System.out.printf("Nguồn: %s                                  Ngày xuất bản: %s.\n",
-                this.source, simpleDateFormat.format(this.publicDate));
-        System.out.println("Link báo gốc: " + this.url);
-        System.out.println("===========================================================================================");
-    }
+//    public void printArticleDetails() {
+//
+//        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy, HH:mm:ss");
+//        System.out.println("Tiêu đề: " + this.getTitle());
+//        System.out.println("-----------------------------------------------------");
+//        System.out.println("Mô tả: " + this.description);
+//        System.out.println("-----------------------------------------------------");
+//        System.out.println("Nội dung tin: ");
+//      	System.out.println(this.content);
+//        System.out.println("-----------------------------------------------------");
+//        System.out.printf("Nguồn: %s                                  Ngày xuất bản: %s.\n",
+//                this.source, simpleDateFormat.format(this.publicDate));
+//        System.out.println("Link báo gốc: " + this.url);
+//        System.out.println("===========================================================================================");
+//    }
     //getters and setters
 
     public String getTitle() {
@@ -63,6 +63,7 @@ public class Article {
     }
 
     public Date getPublicDate() {
+
         return publicDate;
     }
 

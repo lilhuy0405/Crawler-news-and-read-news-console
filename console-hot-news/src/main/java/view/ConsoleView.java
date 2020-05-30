@@ -129,7 +129,7 @@ public class ConsoleView {
             try {
                 categoryId = scanner.nextInt();
             } catch (Exception e) {
-                System.err.println("chỉ chấp nhận số từ 1 đến 6 hãy nhập lại");
+                System.err.println("Chỉ chấp nhận số từ 1 đến 6 hãy nhập lại");
                 continue;
             } finally {
                 scanner.nextLine();
@@ -182,7 +182,7 @@ public class ConsoleView {
             try {
                 newsIndex = scanner.nextInt();
             } catch (Exception e) {
-                System.err.println("chỉ chấp nhận số từ 1 đến 10... Hãy nhập lại");
+                System.err.println("Chỉ chấp nhận số từ 1 đến 10... Hãy nhập lại");
                 continue;
             } finally {
                 scanner.nextLine();

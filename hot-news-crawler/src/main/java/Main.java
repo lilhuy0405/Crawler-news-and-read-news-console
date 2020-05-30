@@ -121,13 +121,13 @@ public class Main {
             for (Thread zingThread : zingThreads) {
                 zingThread.join();
             }
-            System.out.printf("thêm thành công %d article vào database !!!\n",
+            System.out.printf("có tổng cộng %d link báo !!!\n",
                     zingThreads.size() + vnexpressThreads.size() + dantriThreads.size() + vietnamnetThreads.size()
                             + kenh14Threads.size());
         } catch (InterruptedException e) {
             System.err.println("lỗi thread: " + e.getLocalizedMessage());
         }
         long end = Calendar.getInstance().getTimeInMillis();
-        System.out.println("thời gian chạy toàn bộ chương trình: " + (end - start));
+        System.out.println("thời gian chạy toàn bộ chương trình: " + (end - start) + " ms");
     }
 }
